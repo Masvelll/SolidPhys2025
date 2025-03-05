@@ -1,0 +1,32 @@
+atom_style      atomic
+
+units           metal
+variable        n index 5
+variable        shift index 0.1
+variable        dump_id index 0
+
+lattice         fcc 4.04
+
+region          box block 0 $n 0 $n 0 $n units lattice
+create_box      1 box
+create_atoms    1 region box
+
+pair_style eam/alloy
+pair_coeff * * Al_zhou.eam.alloy Al 
+
+# pair_style mlip mlip.ini
+# pair_coeff * *
+mass 1 27
+
+
+neighbor 0.3 bin
+region slice block 1.95 2.05 0 $n 0 $n units lattice
+
+
+group           slice region slice
+displace_atoms  slice move 0.0 ${shift} 0.0 units box
+
+
+dump            d1 all custom 1 ./dumps_eam_T/dump${dump_id} id type x y z fx fy fz
+
+run 0
