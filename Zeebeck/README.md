@@ -3,9 +3,9 @@
 
 Из теории линейного отклика потоки тепла и заряда связаны следующим образом:
 
-$$
+\[
 \begin{pmatrix} j_e \\ j_Q \end{pmatrix} = \begin{pmatrix} L_{11} & L_{12} \\ L_{21} & L_{22} \end{pmatrix} \begin{pmatrix} \vec{G} \\ - \dfrac{\nabla T}{T} \end{pmatrix}
-$$
+\]
 
 где $L_{11} = \sigma$, $S = (L_{11})^{-1} \dfrac{L_{12}}{T}$
 
