@@ -24,9 +24,9 @@ region slice block 1.95 2.05 0 $n 0 $n units lattice
 
 
 group           slice region slice
-displace_atoms  slice move ${shift} 0.0 0.0 units box
+displace_atoms  slice move ${shift} ${shift} 0.0 units box
 
 
-dump            d1 all custom 1 ./dumps_eam_L/dump${dump_id} id type x y z fx fy fz
+dump            d1 all custom 1 ./dumps_mtp_L110/dump${dump_id} id type x y z fx fy fz
 
 run 0
