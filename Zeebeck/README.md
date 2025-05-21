@@ -15,7 +15,7 @@ $$L^{\nu} = e^2 \int \dfrac{d\vec{k}}{4\pi^3} \left(- \dfrac{\partial f}{\partia
 
 Преобразовав её к виду
 
-$$L^{\nu} = \dfrac{\tau e ^2}{2 \pi ^2} \int \left(\dfrac{2m}{\hbar^2}\right)^{3/2} \dfrac{e^{\frac{E - \mu}{kT}}}{ e^{\frac{E - \mu}{kT}} + 1} \dfrac{\sqrt{E}}{kT} \left(\dfrac{2E}{m}\right) (E - \mu)^\nu$$
+$$L^{\nu} = \dfrac{\tau e ^2}{2 \pi ^2} \int_0^{\infty} \left(\dfrac{2m}{\hbar^2}\right)^{3/2} \dfrac{e^{\frac{E - \mu}{kT}}}{ e^{\frac{E - \mu}{kT}} + 1} \dfrac{\sqrt{E}}{kT} \left(\dfrac{2E}{m}\right) (E - \mu)^\nu dE$$
 
 Можем получить следующее значение для коэффициента Зеебека при комнатной температуре
 
