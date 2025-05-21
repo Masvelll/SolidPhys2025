@@ -2,7 +2,8 @@
 
 Из теории линейного отклика потоки тепла и заряда связаны следующим образом:
 
-$$\begin{align*}
+$$
+\begin{align*}
  \begin{pmatrix} 
  j_e \\ j_Q \end{pmatrix}
  =
@@ -19,7 +20,8 @@ $$\begin{align*}
     - \dfrac{\nabla T}{T}
    
    \end{pmatrix}
-\end{align*},$$
+\end{align*},
+$$
 
 где $L_{11} = \sigma$, $S = (L_{11})^{-1} \dfrac{L_{12}}{T}$
 
